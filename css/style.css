@@ -1,0 +1,375 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+       
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2e3436;
+            width:100%;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color:black;
+            color:#e58d2f;
+        }
+        .container-fluid {
+            max-width: 1500px;
+            background: #121415;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            color:white;
+        } 
+        h2 {
+            color: #e58d2f;
+        }
+        .footer {
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .logo {
+            background: linear-gradient(135deg, #efede5, #f9edc6);
+            text-align: center; 
+            font-size: 30px !important;
+            color: black;
+            font-family: 'Times New Roman', Times, serif; 
+            padding:10px;
+         }
+         .service{
+            font-size: 20px;
+             left: 50%;
+        }
+.quicklinks{
+    text-decoration: none;
+    color:white;
+}
+.quicklinks:hover{
+    color:#e58d2f;
+    text-decoration:underline;
+}
+.hiremetag:hover{
+    background-color:rgb(130, 130, 130);
+    color:white;
+}
+.home-page img{
+    height:650px !important;
+}
+.btn-primary {
+    background-color:#121415;
+    border:none;
+    position :absolute;
+    padding:0;
+    top:85%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.btn-primary:hover{
+    color:white;
+    background-color: #e58d2f;
+}
+.btn-primary a{
+    padding:5px 20px;
+    display:inline-block;
+}
+
+/*Where beauty meets relaxation*/
+.description{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:75%;
+    font-size: 50px !important;
+    font-family: 'Times New Roman', Times, serif;
+    color:white
+}
+
+
+
+/*precious beauty launge*/
+
+.brand{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:35%;
+    left:5%;
+   
+    font-size: 50px !important;
+    font-family: 'Times New Roman', Times, serif;
+    color:olivedrab;
+    /*olivedrab*/
+      
+}
+.brand {
+  animation: slideIn 2s ease-out forwards;
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);  /* start off-screen to the left */
+    opacity: 0;                    /* invisible */
+  }
+  to {
+    transform: translateX(0);      /* back to normal position */
+    opacity: 1;                    /* fully visible */
+  }
+}
+
+
+
+/*Our packages */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+.card.show {
+  animation: slideup 1s ease-out forwards;
+}
+
+/* Define the animation */
+@keyframes slideup {
+  from {
+    transform: translateY(100%);  /* start off-screen to the left */
+    opacity: 0;                    /* invisible */
+  }
+  to {
+    transform: translateY(0);      /* back to normal position */
+    opacity: 1;                    /* fully visible */
+  }
+}
+
+
+
+/* Carousel styles */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.item {
+  min-width: 50%;
+  text-align: center;
+  padding: 40px;
+  background: #f3f3f3;
+  font-size: 1.2rem;
+  width: 50% !important;
+  justify-content:center;
+
+}
+.controls{
+    display:none;
+}
+
+
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #333;
+}
+/*courosel styles*/
+
+
+
+
+
+
+.card-image{
+    background: transparent !important;;
+    font-size:medium;
+    padding:0px !important;
+    border: none !important;;
+}
+.info{
+    padding-left: 4% !important;
+    color:white;
+}
+
+/*Hamburger menu*/
+.menu a {
+    color: #DAA520 ;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.menu a:hover {
+    color: #DAA520;
+}
+
+.hamburger:hover+.menu,
+.menu:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger {
+    display:none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 1px;
+    background-color:transparent;
+    color:#DAA520 ;
+    border:1px solid #DAA520;
+    border-radius: 2px;
+    width: 60px;
+    
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+
+
+/*Hamburger menu*/
+
+
+.icon-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 30px; 
+}
+
+.icon-social a {
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 0px;
+    margin-right: 25px;
+    font-size: 28px;
+    color:white!important;   
+}
+
+   @media (max-width:600px) {
+    .title {
+        padding: 0 10px;
+        font-size: 16px; 
+        z-index: 2;       
+    }
+    header .row{
+        padding-left: 20% !important;
+    }
+    header img{
+        width: 80% !important;
+        }
+
+    nav a {
+        display:none;
+       
+    }
+    .hamburger {
+        display:block;
+    }
+    
+    .home-page img{
+        height:400px !important;
+    }
+    .btn-primary{
+        top:500px;
+        z-index:2;
+    }
+    .btn-primary a{
+    padding:5px 20px;
+    display:inline-block;
+    } 
+    .brand{
+        font-size: 35px !important;
+    }
+    .description{
+        font-size: 25px !important;
+        left:50%;
+    } 
+    
+    .item {
+        min-width:100% !important;
+        padding:0px;        
+    } 
+    .card-image{
+        height:auto;
+    }
+    .controls{
+        display:none;
+        position:absolute;
+        top:405%;
+        background-color:transparent;
+        font-size: 20px;
+        z-index:200;
+        width:100%;
+    } 
+    .controls button{
+        background-color:rgb(185, 179, 179);
+        border-radius:50%;
+        border:1px solid rgb(185, 179, 179);
+        color:white;
+        padding:5px 12px;
+    } 
+    .offset{
+        width:400px;
+    }   
+    .hero{
+        height:130px;
+        margin-top:0px;
+        padding-top:60px !important;
+    } 
+    .space{
+        display:flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    } 
+    /*Service page*/ 
+    .service{
+        font-size: 15px;
+        left: 45%;
+    } 
+}
+@media (min-width:600px) and (max-width:1024px){
+    .btn-primary{
+        top:75%;
+    }
+    .description{
+        left:60%;
+        font-size: 40px !important;
+    }
+}
+
